@@ -1,0 +1,88 @@
+.is-invalid {
+  background-image: none !important;
+}
+
+.input-container {
+  display: grid;
+
+  align-items: center;
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 10px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.form-control {
+  padding-left: 35px;
+  height: 38px;
+}
+
+.form-control.is-invalid {
+  border-color: #dc3545;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.invalid-feedback {
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #dc3545;
+  text-align: left;
+}
+
+// Thêm styles cho layout chung
+.register-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e9ecef;
+}
+
+.register-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+}
+
+.register-title {
+  color: #007bff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.btn-register {
+  width: 100%;
+  margin-top: 1rem;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+@media (max-width: 576px) {
+  .register-form {
+    padding: 1.5rem;
+  }
+}
